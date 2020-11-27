@@ -59,7 +59,7 @@ const Home = ({ menu }) => {
         <div>
             <div style={{ display: 'flex', marginTop: '2em', fontSize: '1.4em' }}> <b>Lifetime Earnings</b></div>
             <Card style={{ marginTop: '0.em', boxShadow: '0 8px 6px -6px black', backgroundColor: '#c0f0c0', height: '6em' }}>
-                <div style={{ fontSize: '2em', marginLeft: '0.3em' }}> <img src={logo} className="logo" alt="logo"/>  <b>30,000</b> <span style={{ fontSize: '0.6em' }}> &nbsp; Lifetime won</span> </div>
+                <div style={{ fontSize: '2em', marginLeft: '0.3em' }}> <img src={logo} className="logo" alt="logo"/>  <b>30,000</b> <span style={{ fontSize: '0.6em' }}> <span style={{ marginLeft: '0.8em' }}>Lifetime won</span></span> </div>
             </Card>
 
             <div style={{ marginTop: '4em', fontSize: '1.4em' }}> <b>Yield Pools</b></div>

@@ -1,24 +1,23 @@
-import React, { useState } from "react";
-import { Layout } from "antd";
-import TopicMenu from "./components/TopicMenu";
-import Home from "./components/Home/Home";
-import YieldPools from "./components/YieldPools/YieldPools";
+import React, { useState } from 'react';
+import { Layout } from 'antd';
+import TopicMenu from './components/TopicMenu';
+import Home from './components/Home/Home';
+import YieldPools from './components/YieldPools/YieldPools';
 
+import Marqueec from './components/Marquee/Marquee';
+import { Switch, Route, BrowserRouter as Router, Redirect } from 'react-router-dom';
 
-import Marqueec from "./components/Marquee/Marquee";
-import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
+import './App.css';
 
-import "./App.css";
-
-import NavBar from "./components/NavBar/NavBar";
-import SideBar from "./components/SideBar/SideBar";
+import NavBar from './components/NavBar/NavBar';
+import SideBar from './components/SideBar/SideBar';
 
 function App () {
-    const topics = ["Home", "YieldPools", "Staking", "Auction", "History"];
+    const topics = ['Home', 'YieldPools', 'Staking', 'Auction', 'History'];
     const [contentIndex, setContentIndex] = useState(0);
-    const [selectedKey, setSelectedKey] = useState("0");
+    const [selectedKey, setSelectedKey] = useState('0');
 
-    const changeSelectedKey = (event) => {
+    const changeSelectedKey = event => {
         const key = event.key;
         setSelectedKey(key);
         setContentIndex(+key);
@@ -38,8 +37,11 @@ function App () {
                 <Layout>
                     <SideBar menu={Menu} />
                     <Layout.Content className="content">
-                        <Marqueec/>
+                        <Marqueec />
                         <Switch>
+                            <Route exact path="/">
+                                {<Redirect to="/Home" />}
+                            </Route>
                             <Route exact path="/Home" component={Home} />
                             <Route exact path="/YieldPools" component={YieldPools} />
                         </Switch>

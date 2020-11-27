@@ -16,7 +16,7 @@ const Marqueec = () => {
                             textAlign: "center"
                         }}
                     >
-                        <div style={{ marginTop: '1em', color: 'white', fontSize: '1.2em' }}>POOL JUST ENDED! ⚪ x33046 wallet won 3000 prophet   ⚪ x33054 wallet won 2579 prophet</div>
+                        <div style={{ marginTop: '1em', color: 'white', fontSize: '1.2em' }}>POOL JUST ENDED! * x33046 wallet won 3000 prophet * x33054 wallet won 2579 prophet</div>
                     </div>
 
                 ))}
