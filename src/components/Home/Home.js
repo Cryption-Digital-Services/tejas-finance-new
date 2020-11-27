@@ -1,10 +1,9 @@
-import React, { useState } from "react";
-import { Drawer, Button } from "antd";
-import { MenuOutlined } from "@ant-design/icons";
+import React from "react";
+import { Button } from "antd";
 import "./Home.css";
 import logo from "./../../logo.svg";
 import { Card } from 'antd';
-import { Table, Tag, Space } from 'antd';
+import { Table, Space } from 'antd';
 import { Progress } from 'antd';
 
 const Home = ({ menu }) => {

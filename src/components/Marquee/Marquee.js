@@ -1,12 +1,10 @@
-import React, { useState } from "react";
-import { Drawer, Button } from "antd";
-import { MenuOutlined } from "@ant-design/icons";
+import React from "react";
 import "./Marquee.css";
-import Marquee, { Motion, randomIntFromInterval } from "react-marquee-slider";
+import Marquee from "react-marquee-slider";
 import times from "lodash/times";
 
 const Marqueec = () => {
-    const [visible, setVisible] = useState(false);
+    // const [visible, setVisible] = useState(false);
     return (
         <div style={{ height: "50px", borderBottom: '3px solid orange', borderTop: '3px solid orange', backgroundColor: '#444444' }}>
             <Marquee velocity={30} minScale={0.7} resetAfterTries={200}>

@@ -1,9 +1,5 @@
 import React, { useState } from "react";
-import { Drawer, Button } from "antd";
-import logo from "./../../logo.svg";
 import { Card } from 'antd';
-import { Table, Tag, Space } from 'antd';
-import { Progress } from 'antd';
 import { ArrowRightOutlined } from "@ant-design/icons";
 import JoinPoolDrawer from "../Drawers/JoinPoolDrawer";
 

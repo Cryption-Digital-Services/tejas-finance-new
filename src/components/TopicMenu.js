@@ -1,6 +1,6 @@
 import React from "react";
 import { Menu } from "antd";
-import { Switch, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const TopicMenu = ({ topics, selectedKey, changeSelectedKey }) => {
     const styledTopics = [];

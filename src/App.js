@@ -3,12 +3,10 @@ import { Layout } from "antd";
 import TopicMenu from "./components/TopicMenu";
 import Home from "./components/Home/Home";
 import YieldPools from "./components/YieldPools/YieldPools";
-import Web3 from "web3";
 
 
 import Marqueec from "./components/Marquee/Marquee";
-import { Switch, Route, Link, BrowserRouter as Router } from 'react-router-dom';
-import Web3Modal from "web3modal";
+import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
 
 import "./App.css";
 
@@ -32,6 +30,7 @@ function App () {
             changeSelectedKey={changeSelectedKey}
         />
     );
+    console.log(contentIndex);
     return (
         <Router>
             <div className="App">
@@ -43,12 +42,7 @@ function App () {
                         <Switch>
                             <Route exact path="/Home" component={Home} />
                             <Route exact path="/YieldPools" component={YieldPools} />
-
-                            {/* <Route path="/seatings" component={SeatingsList} />
-            <Route path="/my-company" component={CompanyList} />
-            <Route path="/rooms" component={RoomsList} /> */}
                         </Switch>
-                        {/* {topics[contentIndex]} */}
                     </Layout.Content>
                 </Layout>
             </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import { Layout, Drawer, Button } from "antd";
+import { Drawer, Button } from "antd";
 import { InputNumber } from 'antd';
 
 const JoinPoolDrawer = ({ onClose, visible, title, balance, wallets, currentBalance, minimumFee, chance, winPossibilityAmt, totalAnte }) => {
