@@ -6,32 +6,42 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'build'),
     publicPath: '/',
-    filename: 'bundle.js'
+    filename: 'bundle.js',
   },
   devServer: {
-    contentBase: "./build",
+    contentBase: './build',
   },
   module: {
     rules: [
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        use: ['babel-loader', 'eslint-loader']
+        use: ['babel-loader', 'eslint-loader'],
       },
-      { 
+      {
         test: /\.less$/,
-        use: [ 
-          'style-loader',
-          'css-loader', 
-          'less-loader',
+        use: ['style-loader', 'css-loader', 'less-loader'],
+      },
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.svg$/,
+        use: [
+          {
+            loader: 'svg-url-loader',
+            options: {
+              limit: 10000,
+            },
+          },
         ],
       },
-    ]
+    ],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template:  path.resolve('./index.html'),
+      template: path.resolve('./index.html'),
     }),
-  ]
+  ],
 };
-
