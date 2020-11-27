@@ -25,7 +25,6 @@
     "eslint-fix": "eslint --fix \"src/**/*.js\"",
     "build": "webpack --mode production"
   },
-  "homepage": "http://c-likethis123.github.io/ant-responsive-sidebar",
   "eslintConfig": {
     "extends": "react-app"
   },
