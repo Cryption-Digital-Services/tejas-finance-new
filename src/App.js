@@ -50,7 +50,7 @@ function App () {
                         <Marqueec />
                         <Switch>
                             <Route exact path="/">
-                                {<Redirect to="/" />}
+                                {<Redirect to="/home" />}
                             </Route>
                             <Route exact path="/home" component={Home} />
                             <Route exact path="/prophetPools" component={YieldPools} />
