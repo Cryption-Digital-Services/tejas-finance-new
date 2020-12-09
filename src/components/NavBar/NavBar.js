@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Drawer, Button } from "antd";
 import { MenuOutlined } from "@ant-design/icons";
 import "./NavBar.css";
-import logo from "./../../logo.svg";
 
 const NavBar = ({ menu }) => {
     const [visible, setVisible] = useState(false);
@@ -15,7 +14,7 @@ const NavBar = ({ menu }) => {
                 onClick={() => setVisible(true)}
             />
             <Drawer
-                title="Topics"
+                title=""
                 placement="left"
                 onClick={() => setVisible(false)}
                 onClose={() => setVisible(false)}
@@ -23,9 +22,6 @@ const NavBar = ({ menu }) => {
             >
                 {menu}
             </Drawer>
-            <a href="/">
-                <img src={logo} className="logo" alt="logo" />
-            </a>
         </nav>
     );
 };

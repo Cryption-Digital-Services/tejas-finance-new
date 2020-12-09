@@ -1,9 +1,37 @@
 
 .ant-progress .ant-progress-outer .ant-progress-inner .ant-progress-bg{
-   height: 3.4em !important;
+   height: 1.4em !important;
+   background-color: #ff005c;
 }
 
 #yieldpool-card-bigmoney .ant-card .ant-card-head {
-
-background-color: green;
+   background-color: green;
+   height: 0.7em;
+   color: #162b51;
+   min-height: 0.7em;
+   border-radius: 0.345em;
 }
+
+
+.ant-table-tbody {
+   background-color: #162b51;
+}
+
+thead[class*="ant-table-thead"] th{
+   background-color: #162b51 !important;
+}
+
+/* thead[class*="ant-table-thead"] th tr{
+   color:#ff005c;
+} */
+ .ant-table-cell {
+    color: #5e6d87;
+    font-weight: bold;
+ }
+
+ .ant-table-thead > tr > th {
+   color:#ff005c !important;
+   font-weight: bold !important;
+ }
+
+

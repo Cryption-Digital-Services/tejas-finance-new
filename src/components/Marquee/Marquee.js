@@ -4,21 +4,11 @@ import Marquee from "react-marquee-slider";
 import times from "lodash/times";
 
 const Marqueec = () => {
-    // const [visible, setVisible] = useState(false);
     return (
-        <div style={{ height: "50px", borderBottom: '3px solid orange', borderTop: '3px solid orange', backgroundColor: '#444444' }}>
+        <div style={{ width: "35em", height: "2em", boxShadow: '0 0 9px #ff073a', borderTop: '1px solid #ff073a', borderRadius: '3.5em', backgroundColor: '#111828' }}>
             <Marquee velocity={30} minScale={0.7} resetAfterTries={200}>
                 {times(1, Number).map((id) => (
-
-                    <div
-                        style={{
-                            borderRadius: "50%",
-                            textAlign: "center"
-                        }}
-                    >
-                        <div style={{ marginTop: '1em', color: 'white', fontSize: '1.2em' }}>POOL JUST ENDED! * x33046 wallet won 3000 prophet * x33054 wallet won 2579 prophet</div>
-                    </div>
-
+                    <div style={{ marginTop: '0.4em', color: '#4b8b3b', fontSize: '1em' }}>POOL JUST ENDED!  x33046 wallet won 3000 prophet </div>
                 ))}
             </Marquee>
         </div>

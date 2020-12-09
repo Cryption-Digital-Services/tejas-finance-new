@@ -1,0 +1,15 @@
+
+.prophet-card {
+    margin-top: 0.4em !important;
+    box-shadow: 0 8px 6px -6px black !important;
+    height: 13em !important;
+    width: 26em !important;
+    background-color: #162b51 !important;
+    border-radius: 1em !important;
+    border-color: #162b51 !important;
+    /* borderRightColor: '#ff005c', borderRightWidth: 'medium', borderBottomWidth: 'medium' */
+}
+
+.active {
+    border-bottom-color: #ff005c !important;
+}

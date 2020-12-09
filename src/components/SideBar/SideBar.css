@@ -1,4 +1,56 @@
 .sidebar {
-    height: 1000px;
-    margin-right: 24px;
+    height: 100em;
+}
+
+
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item {
+    color: #5e6d87;
+}
+
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+    color: #ff005c;
+    background-color: #162b51 !important;
+}
+
+
+
+.ant-menu-inline, .ant-menu-vertical, .ant-menu-vertical-left {
+    border-right: 2em solid #162035;
+} 
+.ant-menu-vertical .ant-menu-item::after, .ant-menu-vertical-left .ant-menu-item::after, .ant-menu-vertical-right .ant-menu-item::after, .ant-menu-inline .ant-menu-item::after {
+    border-right: 0.2em solid #ff005c;
+} 
+
+
+
+@media only screen and (max-width: 1000px) {
+.ant-drawer-content {
+    background-color: #162b51 !important;
+}
+
+.ant-drawer-content .ant-drawer-wrapper-body .ant-drawer-body .ant-menu {
+    background-color: #162b51 !important;
+}
+
+.ant-drawer-mask {
+    display: none;
+}
+
+.anticon .anticon-close {
+    color: white !important;
+}
+
+.ant-menu-inline, .ant-menu-vertical, .ant-menu-vertical-left {
+    border-right: none;
+} 
+
+.ant-menu-vertical .ant-menu-item::after, .ant-menu-vertical-left .ant-menu-item::after, .ant-menu-vertical-right .ant-menu-item::after, .ant-menu-inline .ant-menu-item::after {
+    border-right: 0em solid #ff005c;
+} 
+
+.navbar .ant-btn-primary {
+    background-color: #162b51 !important; 
+    border-color: #162b51 !important;
+}
+
 }
