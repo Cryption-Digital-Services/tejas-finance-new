@@ -5,15 +5,19 @@ import logo from './../../logo.svg';
 import { Card } from 'antd';
 import { Table, Space } from 'antd';
 import { Progress } from 'antd';
+import JoinPoolModal from '../Modals/JoinPoolModal';
+import useModal from '../Modals/useModal';
 
 const Home = (account) => {
     const [act, setAccount] = useState(account.account);
     useEffect(() => {
-        console.log(act);
         if (act !== "") {
             setAccount(act);
         }
     }, [act]);
+
+    const { isShowing, toggle } = useModal();
+
     const columns = [
         {
             title: 'Activity',
@@ -27,7 +31,7 @@ const Home = (account) => {
             render: (value, record) => {
                 return {
                     props: {
-                        style: { color: value > 0 ? "green" : "red" }
+                        style: { color: value > 0 ? "green" : "#ff005c" }
                     },
                     children: <div>{value}</div>
                 };
@@ -36,17 +40,19 @@ const Home = (account) => {
         {
             title: 'Date',
             dataIndex: 'date',
-            key: 'date',
-            render: text => <a>{text}</a>
+            key: 'date'
         },
         {
             title: 'Action',
             key: 'action',
-            render: (text, record) => (
-                <Space size="middle">
-                    <a>See Details</a>
-                </Space>
-            )
+            render: (value, record) => {
+                return {
+                    props: {
+                        style: { color: "#ff005c" }
+                    },
+                    children: <Space size="middle">See Details</Space>
+                };
+            }
         }
     ];
 
@@ -204,6 +210,7 @@ const Home = (account) => {
                         <Button
                             type="primary"
                             shape="round"
+                            onClick={toggle}
                             style={{
 	                            background: 'linear-gradient(to right, #ff756d, #ff1a60)',
                                 width: '6em',
@@ -213,6 +220,7 @@ const Home = (account) => {
                         >
               Join
                         </Button>
+                        <JoinPoolModal isShowing={isShowing} hide={toggle}/>
                     </Card>
                 </div>
 
@@ -253,6 +261,7 @@ const Home = (account) => {
                         <Button
                             type="primary"
                             shape="round"
+                            onClick={toggle}
                             style={{
 	                            background: 'linear-gradient(to right, #ff756d, #ff1a60)',
                                 alignItems: 'center',
@@ -301,6 +310,7 @@ const Home = (account) => {
                         <Button
                             type="primary"
                             shape="round"
+                            onClick={toggle}
                             style={{
 	                            background: 'linear-gradient(to right, #ff756d, #ff1a60)',
                                 width: '6em',

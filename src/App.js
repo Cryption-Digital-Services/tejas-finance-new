@@ -135,7 +135,6 @@ function App () {
     );
     return (
         <div>
-            (
             <Router>
                 <div className="App">
                     <NavBar menu={Menu} />
