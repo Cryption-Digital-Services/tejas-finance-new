@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Button } from 'antd';
 import './Home.css';
 import logo from './../../logo.svg';
@@ -6,7 +6,14 @@ import { Card } from 'antd';
 import { Table, Space } from 'antd';
 import { Progress } from 'antd';
 
-const Home = () => {
+const Home = (account) => {
+    const [act, setAccount] = useState(account.account);
+    useEffect(() => {
+        console.log(act);
+        if (act !== "") {
+            setAccount(act);
+        }
+    }, [act]);
     const columns = [
         {
             title: 'Activity',
@@ -81,6 +88,7 @@ const Home = () => {
             activity: 'You won 300 prophet from the weekly blitz action'
         }
     ];
+
     return (
         <div>
             <div style={{ display: 'flex', marginTop: '2em', fontSize: '1.4em' }}>
@@ -184,9 +192,9 @@ const Home = () => {
                         </div>
                         <div style={{ fontSize: '1em' }}>
                             {' '}
-                            <b>1000 to enter</b>
+                            <b style={{ color: 'white' }}>1000 to enter</b>
                         </div>
-                        <div style={{ fontSize: '0.8em' }}>80% chance</div>
+                        <div style={{ fontSize: '0.8em', color: 'grey' }}>80% chance</div>
                         <div
                             style={{ color: '#ff005c', fontSize: '1em', marginTop: '1.4em' }}
                         >
@@ -232,9 +240,9 @@ const Home = () => {
                         </div>
                         <div style={{ fontSize: '1em' }}>
                             {' '}
-                            <b>1000 to enter</b>
+                            <b style={{ color: 'white' }}>1000 to enter</b>
                         </div>
-                        <div style={{ fontSize: '0.8em' }}>70% chance</div>
+                        <div style={{ fontSize: '0.8em', color: 'grey' }}>70% chance</div>
                         <div
                             style={{ color: '#ff005c', fontSize: '1em', marginTop: '1.4em' }}
                         >
@@ -281,9 +289,9 @@ const Home = () => {
                         </div>
                         <div style={{ fontSize: '1em' }}>
                             {' '}
-                            <b>1000 to enter</b>
+                            <b style={{ color: 'white' }}>1000 to enter</b>
                         </div>
-                        <div style={{ fontSize: '0.8em' }}>40% chance</div>
+                        <div style={{ fontSize: '0.8em', color: 'grey' }}>40% chance</div>
                         <div
                             style={{ color: '#ff005c', fontSize: '1em', marginTop: '1.4em' }}
                         >
@@ -310,7 +318,33 @@ const Home = () => {
                 {' '}
                 <b style={{ color: 'white' }}>Your Activity</b>
             </div>
-            <Table style={{ width: '65em' }} columns={columns} dataSource={data} />
+            {console.log(account)}
+            { account.account === "" ?
+                <Card bordered={false}
+                    style={{ width: '58em',
+                        height: '20em',
+                        marginTop: '0.4em',
+                        boxShadow: '0 8px 6px -6px black',
+                        backgroundColor: '#162b51',
+                        textAlign: 'center',
+                        verticalAlign: 'middle',
+                        lineHeight: '20em'
+                    }}>
+
+                    <Button
+                        type="primary"
+                        shape="round"
+                        style={{
+	                            background: 'linear-gradient(to right, #ff756d, #ff1a60)',
+                            marginTop: '1em'
+                        }}
+                        size={'medium'}
+                    >
+                          Connect
+                    </Button>
+
+                </Card> :
+                <Table style={{ width: '65em' }} columns={columns} dataSource={data} />}
         </div>
     );
 };
