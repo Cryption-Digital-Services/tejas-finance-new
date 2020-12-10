@@ -1,6 +1,6 @@
 import React from "react";
 import { Card } from "antd";
-import SocialMediaLogo from '../../../SocialMediaLogo.svg';
+import SocialMediaLogo from '../../assets/SocialMediaLogo.svg';
 
 const ComingSoon = () => {
     return (

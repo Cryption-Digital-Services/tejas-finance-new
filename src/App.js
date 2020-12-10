@@ -9,7 +9,7 @@ import YieldPools from './components/YieldPools/YieldPools';
 import ComingSoon from './components/ComingSoon/ComingSoon';
 
 import Logo from './components/Logo/ProphetLogo';
-import metamaskLogo from './../metamaskLogo.svg';
+import metamaskLogo from './assets/metamaskLogo.svg';
 
 // import Web3 from "web3";
 
