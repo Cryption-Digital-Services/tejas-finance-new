@@ -6,6 +6,8 @@ import { Layout, Button } from 'antd';
 import TopicMenu from './components/TopicMenu';
 import Home from './components/Home/Home';
 import YieldPools from './components/YieldPools/YieldPools';
+import ComingSoon from './components/ComingSoon/ComingSoon';
+
 import Logo from './components/Logo/ProphetLogo';
 import metamaskLogo from './../metamaskLogo.svg';
 
@@ -157,8 +159,11 @@ function App () {
                                         <Home account={account} />
                                     )}
                                 />
-                                {/* <Route exact path="/home" render={(account) => (<Home {...account}/>)} /> */}
                                 <Route exact path="/prophetPools" component={YieldPools} />
+                                <Route exact path="/staking" component={ComingSoon} />
+                                <Route exact path="/auction" component={ComingSoon} />
+                                <Route exact path="/activity" component={ComingSoon} />
+
                             </Switch>
                         </Layout.Content>
                     </Layout>

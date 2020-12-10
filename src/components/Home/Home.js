@@ -336,7 +336,7 @@ const Home = (account) => {
                         verticalAlign: 'middle',
                         lineHeight: '20em'
                     }}
-                    >
+                >
                     <Button
                         type="primary"
                         shape="round"
