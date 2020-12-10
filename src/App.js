@@ -164,7 +164,6 @@ function App () {
                     </Layout>
                 </div>
             </Router>
-            )}
         </div>
     );
 }

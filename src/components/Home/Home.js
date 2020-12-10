@@ -165,7 +165,6 @@ const Home = (account) => {
             </div>
 
             <div style={{ marginTop: '4em', fontSize: '1.4em', color: 'white' }}>
-                {' '}
                 <b>Prophet Pools</b>
             </div>
 
@@ -254,7 +253,6 @@ const Home = (account) => {
                         <div
                             style={{ color: '#ff005c', fontSize: '1em', marginTop: '1.4em' }}
                         >
-                            {' '}
                             <b>Last chance! Filling Up!</b>
                         </div>
 
@@ -289,7 +287,7 @@ const Home = (account) => {
                         }}
                     >
                         <div style={{ color: '#ff005c', fontSize: '1em' }}> <b> Big money Pool</b>  </div>
-                        <img src={logo} style={{ }} className="logo" alt="logo" />
+                        <img src={logo} className="logo" alt="logo" />
                         <text style={{ color: 'white', fontSize: '1.5em' }}> <b>500,000</b></text>
                         <p style={{ color: '#5e6d87', fontSize: '1.2em' }}>5 wallets</p>
                         <div style={{ color: 'green', fontSize: '1em' }}>
@@ -325,10 +323,8 @@ const Home = (account) => {
             </div>
 
             <div style={{ marginTop: '2em', marginBottom: '1.5em', fontSize: '1.4em' }}>
-                {' '}
                 <b style={{ color: 'white' }}>Your Activity</b>
             </div>
-            {console.log(account)}
             { account.account === "" ?
                 <Card bordered={false}
                     style={{ width: '58em',
@@ -339,8 +335,8 @@ const Home = (account) => {
                         textAlign: 'center',
                         verticalAlign: 'middle',
                         lineHeight: '20em'
-                    }}>
-
+                    }}
+                    >
                     <Button
                         type="primary"
                         shape="round"
