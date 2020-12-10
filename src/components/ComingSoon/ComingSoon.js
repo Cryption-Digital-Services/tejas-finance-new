@@ -21,8 +21,8 @@ const ComingSoon = () => {
             </Card>
             <div style={{ marginLeft: '14em', marginTop: '2em' }}>
                 <div style={{ fontSize: '2em', color: '#ff005c' }}> Meanwhile ...</div>
-                <span style={{ color: '#797e8a' }}> Check out our community on social media and join the revolution </span>
-                <img src={SocialMediaLogo} style={{ marginRight: '0.4em', fontSize: '1.2em' }} className="logo" alt="logo" />
+                <div style={{ color: '#797e8a' }}> Check out our community on social media and join the revolution </div>
+                <img src={SocialMediaLogo} style={{ marginRight: '0.4em', fontSize: '1.2em', marginTop: "1em" }} className="logo" alt="logo" />
             </div>
         </div>
 
