@@ -67,7 +67,7 @@ const YieldPools = () => {
 
     return (
         <div>
-            <div className="yield-pools" style={{ marginTop: '2em', marginBottom: '2em', display: 'flex', justifyContent: 'left' }}>
+            <div className="yield-pools" style={{ marginTop: '2em', marginBottom: '2em', display: 'flex', justifyContent: 'left', marginLeft: '5em' }}>
 
                 <div style={{ marginTop: '0.8em' }}>
                     <Card bordered={false} style={{ marginTop: '0.4em', boxShadow: '0 8px 6px -6px black', height: '11em', width: '26em', marginRight: '4em', backgroundColor: '#162b51', textAlign: 'center', verticalAlign: 'middle', lineHeight: '8em', borderRadius: '1em' }}>
@@ -83,8 +83,8 @@ const YieldPools = () => {
                     </Card>
                 </div>
             </div>
-            <div style={{ display: 'flex' }}>
-                <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'left', marginTop: '2em' }}>
+            <div style={{ display: 'flex', justifyContent: 'left', marginLeft: '5em' }}>
+                <div style={{ display: 'flex', flexDirection: 'column', marginTop: '2em' }}>
                     <div style={{ marginTop: '0.8em' }} >
                         <Card id="yieldpool-card-beginner" className="prophet-card active" >
                             <div style={{ fontSize: '1em', color: '#ff005c', marginBottom: '0.5em' }}> <b>Beginner Pool</b></div>
@@ -119,8 +119,8 @@ const YieldPools = () => {
                     </div>
 
                 </div>
-                <div style={{ marginTop: '2em' }} id="card-details-join">
-                    <Card bordered={false} style={{ marginTop: '0.4em', boxShadow: '0 8px 6px -6px black', width: '26em', backgroundColor: '#162b51', marginLeft: '4em', borderRadius: '1em', color: 'white' }}>
+                <div style={{ marginTop: '3.2em' }} id="card-details-join">
+                    <Card bordered={false} style={{ boxShadow: '0 8px 6px -6px black', width: '26em', backgroundColor: '#162b51', marginLeft: '4em', borderRadius: '1em', color: 'white' }}>
                         <div style={{ fontSize: '1.4em', color: '#ff005c' }}> <b>{cardDetails.type}</b></div>
                         <span style={{ fontSize: '0.8em' }}>{cardDetails.walletsIn} wallets in, {cardDetails.walletsWin} wallets win</span>
                         <p style={{ fontSize: '0.8em' }}>Wallets in so far: <b>3</b></p>
