@@ -7,7 +7,7 @@ import TopicMenu from './components/TopicMenu';
 import Home from './components/Home/Home';
 import YieldPools from './components/YieldPools/YieldPools';
 import ComingSoon from './components/ComingSoon/ComingSoon';
-
+import logo from './logo.svg';
 import Logo from './components/Logo/ProphetLogo';
 import metamaskLogo from './assets/metamaskLogo.svg';
 
@@ -35,7 +35,7 @@ import {
 
 function App () {
     const topics = [
-        { name: '', icon: <Logo />, link: 'home' },
+        { name: '', icon: <Logo />, link: '' },
         { name: 'Home', icon: <HomeFilled />, link: 'home' },
         {
             name: 'Prophet Pools',
@@ -55,6 +55,12 @@ function App () {
     const [loading, setLoading] = useState(true);
     const [Hello, setHello] = useState({});
     const [SIGNER, setSigner] = useState({});
+
+    const [App, setApp] = useState(false);
+
+    const handleShowApp = () => {
+        setApp(true);
+    };
 
     const loadWeb3 = async () => {
         if (window.ethereum) {
@@ -160,53 +166,75 @@ function App () {
         />
     );
     return (
-        <div>
+        App !== true ?
             <Router>
-                <div className="App">
-                    <NavBar menu={Menu} />
-                    <Layout>
-                        <SideBar menu={Menu} />
-                        <Layout.Content className="content">
-                            <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                                <Marqueec />
-                                <Button
-                                    onClick={walletAddress}
-                                    type="primary"
-                                    shape="round"
-                                    style={{
-                                        background: 'linear-gradient(to right, #ff756d, #ff1a60)',
-                                        width: '7em',
-                                        marginRight: '1.5em',
-                                        color: 'white',
-                                        overflow: 'hidden',
-                                        fontSize: 'bold'
-                                    }}
-                                    size={'medium'}
-                                >
-                                    <img
-                                        src={metamaskLogo}
-                                        style={{ marginRight: '0.4em', fontSize: '0.5em' }}
-                                        className="logo"
-                                        alt="logo"
-                                    />{' '}
-                                    <b> {account === '' ? 'Connect' : account}</b>
-                                </Button>
-                            </div>
-                            <Switch>
-                                <Route exact path="/">
-                                    {<Redirect to="/home" />}
-                                </Route>
-                                <Route path="/home" render={() => <Home account={account} />} />
-                                <Route exact path="/prophetPools" component={YieldPools} />
-                                <Route exact path="/staking" component={ComingSoon} />
-                                <Route exact path="/auction" component={ComingSoon} />
-                                <Route exact path="/activity" component={ComingSoon} />
-                            </Switch>
-                        </Layout.Content>
-                    </Layout>
+                <div className="landing-page" style={{ width: '140em', height: '100em' }}>
+                    <header className="fixednav">
+                        <nav className="leftnav">
+                            <a href="#" className="rightnav"> <img src={logo} className="logo" alt="logo" /> <b>prophet</b></a>
+                        </nav>
+                        <nav className="rightnav">
+                            <a className="rightnav">Features</a>
+                            <a className="rightnav">Token</a>
+                            <a href="#" className="rightnav">Roadmap</a>
+                            <a href="#" className="rightnav">Services</a>
+                            <a href="#" className="rightnav">Blog</a>
+                            <a href="#" className="rightnav">FAQ</a>
+                            <a href="#" className="rightnav">Whitepaper</a>
+                            <Button onClick= {handleShowApp} type="primary" shape="round" style={{ background: 'linear-gradient(to right, #ff756d, #ff1a60)', width: '6em', marginRight: '1em' }} size={'small'}>
+          App <span style={{ marginLeft: '0.5em' }}> > </span>
+                            </Button>
+                        </nav>
+                    </header>
                 </div>
-            </Router>
-        </div>
+            </Router> :
+            <div>
+                <Router>
+                    <div className="App">
+                        <NavBar menu={Menu} />
+                        <Layout>
+                            <SideBar menu={Menu} />
+                            <Layout.Content className="content">
+                                <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                    <Marqueec />
+                                    <Button
+                                        onClick={walletAddress}
+                                        type="primary"
+                                        shape="round"
+                                        style={{
+                                            background: 'linear-gradient(to right, #ff756d, #ff1a60)',
+                                            width: '7em',
+                                            marginRight: '1.5em',
+                                            color: 'white',
+                                            overflow: 'hidden',
+                                            fontSize: 'bold'
+                                        }}
+                                        size={'medium'}
+                                    >
+                                        <img
+                                            src={metamaskLogo}
+                                            style={{ marginRight: '0.4em', fontSize: '0.5em' }}
+                                            className="logo"
+                                            alt="logo"
+                                        />{' '}
+                                        <b> {account === '' ? 'Connect' : account}</b>
+                                    </Button>
+                                </div>
+                                <Switch>
+                                    <Route exact path="/">
+                                        {<Redirect to="/home" />}
+                                    </Route>
+                                    <Route path="/home" render={() => <Home account={account} />} />
+                                    <Route exact path="/prophetPools" component={YieldPools} />
+                                    <Route exact path="/staking" component={ComingSoon} />
+                                    <Route exact path="/auction" component={ComingSoon} />
+                                    <Route exact path="/activity" component={ComingSoon} />
+                                </Switch>
+                            </Layout.Content>
+                        </Layout>
+                    </div>
+                </Router>
+            </div>
     );
 }
 

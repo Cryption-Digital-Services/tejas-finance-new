@@ -32,3 +32,32 @@
 .ant-btn {
   border-color: #ff4d4f !important;
 }
+
+.landing-page {
+  background: url('../src/assets/landingbg.jpg') 100% 100% no-repeat; 
+  background-attachment: fixed;
+  background-size: cover cover; 
+}
+
+.fixednav {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* aligns links vertically */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 60px;
+  background-color: black !important;
+}
+
+.leftnav {
+  flex-grow: 1; /* this is the important bit */
+}
+
+/* the rest is just for looks */
+
+a {
+  padding: 1em;
+}
