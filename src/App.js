@@ -203,21 +203,25 @@ function App () {
                                         shape="round"
                                         style={{
                                             background: 'linear-gradient(to right, #ff756d, #ff1a60)',
-                                            width: '7em',
+                                            width: '8em',
                                             marginRight: '1.5em',
-                                            color: 'white',
-                                            overflow: 'hidden',
-                                            fontSize: 'bold'
+                                            color: 'white'
                                         }}
                                         size={'medium'}
                                     >
-                                        <img
-                                            src={metamaskLogo}
-                                            style={{ marginRight: '0.4em', fontSize: '0.5em' }}
-                                            className="logo"
-                                            alt="logo"
-                                        />{' '}
-                                        <b> {account === '' ? 'Connect' : account}</b>
+
+                                        <div style={{
+                                            overflow: 'hidden',
+                                            whiteSpace: 'nowrap',
+                                            textOverflow: 'ellipsis'
+                                        }}>
+                                            <img
+                                                src={metamaskLogo}
+                                                style={{ fontSize: '0.5em', marginRight: '0.3em' }}
+                                                className="logo"
+                                                alt="logo"
+                                            />  {account === '' ? 'Connect' : account}
+                                        </div>
                                     </Button>
                                 </div>
                                 <Switch>
