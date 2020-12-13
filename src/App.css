@@ -18,6 +18,10 @@
 
 }
 
+.ant-layout-sider-light {
+  background: #162035;
+}
+
 .ant-layout-sider-children .ant-menu{
   background-color: #162b51!important;
   border-radius: 1em;

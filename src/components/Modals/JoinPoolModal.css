@@ -1,3 +1,4 @@
+
 .ant-modal-header {
   background-color: #162035 !important;
 }
@@ -16,13 +17,6 @@
   background-color: #162b51 !important;
   text-align: left !important;
 }
-/* .ant-modal-footer .ant-btn {
-    color: #888d98 !important;
-    border-color: #162035 !important;
-    background: linear-gradient(to right, #ff756d, #ff1a60) !important;
-    border-radius: 1em;
-    width: 6em;
-} */
 
 .ant-modal-footer .ant-btn {
     color: #888d98 !important;
@@ -30,4 +24,9 @@
     border-color: #162035 !important;
     border-radius: 1em;
     width: 6em;
+}
+
+
+@media (min-width: 120em) {
+ 
 }

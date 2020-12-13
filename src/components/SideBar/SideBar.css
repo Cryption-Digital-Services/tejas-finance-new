@@ -54,3 +54,12 @@
 }
 
 }
+
+@media (min-width: 120em) {
+    #sidebar {
+        max-width: none !important;
+        flex: none !important;
+        height: 1060em !important;
+        width: 20em !important;
+    } 
+}

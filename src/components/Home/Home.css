@@ -1,15 +1,155 @@
 
+/* Earnings card */
+#home-page {
+   margin-left: 7em;
+}
+
+#lifetime-earnings {
+   background-color: #162b51;
+   margin-top: 0.4em;
+   box-shadow: 0 8px 6px -6px black;
+   height: 12em;
+   width: 23em;
+   border-radius: 1em;
+}
+
+.lifetime-earnings-card-content {
+   color: #ff005c;
+   margin-left: 0.3em;
+}
+
+.lifetime-earnings-header {
+  font-size: 1.5em;
+}
+
+.lifetime-earnings-header {
+   font-size: 1.5em;
+ }
+
+.logo-earnings-card {
+   height: 2em;
+   margin-bottom: 1.2em;
+}
+
+.lifetime-won {
+   font-size: 1.2em;
+   margin-left: 0.8em;
+   color: #5e6d87;
+}
+
+.lifetime-earnings-amount {
+   font-size: 3em;
+}
+
+/* Staking card */
+
+#staking-card {
+   margin-left: 2em;
+   margin-top: 0.4em;
+   box-shadow: 0 8px 6px -6px black;
+   height: 12em;
+   width: 33em;
+   background-color: #162b51;
+   border-radius: 1em;
+}
+.stalking-card-header {
+   font-size: 1.5em;
+   color: #ff005c;
+}
+.stalking-card-header-2 {
+   font-size: 0.8em;
+   color: #bdc2cd;
+}
+
+.stalking-card-header-info {
+   font-size: 1em;
+   color: #66738c;
+}
+
 .ant-progress .ant-progress-outer .ant-progress-inner .ant-progress-bg{
    height: 1.4em !important;
    background-color: #ff005c;
 }
 
+#staking-button{
+   background: linear-gradient(to right, #ff756d, #ff1a60);
+   margin-top: 0.7em;
+   width: 6em;
+}
+
+#staking-button:hover {
+   background: linear-gradient(to right, #ed645c, #d10a47);
+}
+
 #yieldpool-card-bigmoney .ant-card .ant-card-head {
    background-color: green;
    height: 0.7em;
-   color: #162b51;
    min-height: 0.7em;
+   color: #162b51;
    border-radius: 0.345em;
+}
+
+#yieldpool-card{
+   margin-top: 0.8em;
+   box-shadow: 0 8px 6px -6px black;
+   margin-right: 2em;
+   background-color: #162b51 !important;
+   border-radius: 1em;
+   height: 20em;
+   width: 18em;
+}
+
+.yieldpool-header {
+   color: #ff005c;
+   font-size: 1em;
+}
+
+.logo-yieldpool-card {
+   height: 2em;
+   margin-bottom: 0.5em;
+}
+
+.yieldpool-amount {
+   color: white;
+   font-size: 1.5em;
+}
+
+.wallets-number-yieldpool {
+   color: #5e6d87;
+   font-size: 1.2em
+}
+
+.yieldpool-to-win {
+   color: green;
+   font-size: 1em;
+}
+
+.yieldpool-enter-amount {
+   color: white;
+   font-size: 1em;
+}
+
+.yieldpool-chance {
+   font-size: 0.8em;
+   color: grey;
+}
+
+.yieldpool-warning {
+   font-size: 1em;
+   margin-top: 1.4em;
+   color: #ff005c;
+}
+
+/* table */
+#placeholder-card {
+   width: 65em;
+   height: 20em;
+   margin-top: 0.4em;
+   box-shadow: 0 8px 6px -6px black;
+   background-color: #162b51;
+   text-align: center;
+   vertical-align: middle;
+   line-height: 20em;
 }
 
 
@@ -17,13 +157,14 @@
    background-color: #162b51;
 }
 
+#table {
+   width: 58em;
+}
+
 thead[class*="ant-table-thead"] th{
    background-color: #162b51 !important;
 }
 
-/* thead[class*="ant-table-thead"] th tr{
-   color:#ff005c;
-} */
  .ant-table-cell {
     color: #5e6d87;
     font-weight: bold;
@@ -32,6 +173,113 @@ thead[class*="ant-table-thead"] th{
  .ant-table-thead > tr > th {
    color:#ff005c !important;
    font-weight: bold !important;
+ }
+
+ @media (min-width: 120em) {
+   #home-page {
+      margin-left: 12em;
+   }
+   #lifetime-earnings {
+      height: 19em;
+      width: 37em;
+      border-radius: 1.5em;
+   }
+   .lifetime-earnings-header {
+      font-size: 2.2em;
+    }
+
+   .lifetime-earnings-amount {
+      font-size: 5em;
+   }
+   .logo-earnings-card {
+      height: 4em;
+      margin-bottom: 2em;
+   }
+   .lifetime-won {
+      font-size: 2em;
+      margin-left: 1.8em;
+   }
+
+   #staking-card {
+      height: 19em;
+      width: 43em;
+      background-color: #162b51;
+      border-radius: 1em;
+}
+
+   .stalking-card-header {
+      font-size: 2.2em;
+   }
+
+   .stalking-card-header-2 {
+      font-size: 1.2em;
+   }
+   .stalking-card-header-info {
+      font-size: 1.5em;
+   }
+
+   .ant-progress .ant-progress-outer .ant-progress-inner .ant-progress-bg{
+      height: 2em !important;
+   }
+
+   #staking-button{
+      margin-top: 2em;
+      height: 2em;
+      width: 6em;
+   }
+
+   #yieldpool-card-bigmoney .ant-card .ant-card-head {
+      height: 1.2em;
+      min-height: 1.2em;
+   }
+
+   #yieldpool-card{
+      height: 34em;
+      width: 26em;
+   }
+
+   .yieldpool-header {
+      font-size: 2em;
+   }
+   
+   .logo-yieldpool-card {
+      height: 3em;
+   }
+   
+   .yieldpool-amount {
+      font-size: 2.3em;
+   }
+   
+   .wallets-number-yieldpool {
+      font-size: 2em
+   }
+   
+   .yieldpool-to-win {
+      font-size: 1.8em;
+   }
+   
+   .yieldpool-enter-amount {
+      font-size: 1.8em;
+   }
+   
+   .yieldpool-chance {
+      font-size: 1.6em;
+   }
+   
+   .yieldpool-warning {
+      font-size: 1.8em;
+      margin-top: 1.4em;
+   }
+
+   #placeholder-card {
+      width: 82em;
+      height: 30em;
+   }
+
+   #table {
+      width: 82em;
+   }
+
  }
 
 

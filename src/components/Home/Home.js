@@ -100,54 +100,34 @@ const Home = (account) => {
             <div style={{ display: 'flex', marginTop: '2em', fontSize: '1.4em' }}>
                 <Card
                     bordered = {false}
-                    style={{
-                        marginTop: '0.4em',
-                        boxShadow: '0 8px 6px -6px black',
-                        backgroundColor: '#162b51',
-                        height: '12em',
-                        width: '25em',
-                        borderRadius: '1em'
-                    }}
+                    className = "lifetime-earnings"
+                    id="lifetime-earnings"
                 >
-                    <div style={{ marginLeft: '0.3em' }}>
-                        {' '}
-                        <div style={{ color: '#ff005c', fontSize: '1.5em' }}> Lifetime earnings </div>
-                        <img src={logo} style={{ marginBottom: '1.2em' }} className="logo" alt="logo" />
-                        <text style={{ color: '#ff005c', fontSize: '3em' }}> <b>30,000</b></text>
-                        <span style={{ fontSize: '0.6em' }}>
-                            {' '}
-                            <p style={{ marginLeft: '0.8em', color: '#5e6d87', fontSize: '1.8em' }}>Lifetime won</p>
-                        </span>{' '}
+                    <div className="lifetime-earnings-card-content">
+                        <div className="lifetime-earnings-header"> Lifetime earnings </div>
+                        <img src={logo} className="logo-earnings-card" alt="logo" />
+                        <span className="lifetime-earnings-amount"> <b>30,000</b></span>
+                        <span className="lifetime-won">
+                            <p>Lifetime won</p>
+                        </span>
                     </div>
                 </Card>
 
                 <Card
+                    id = "staking-card"
                     bordered = {false}
-                    style={{
-                        marginLeft: '2em',
-                        marginTop: '0.4em',
-                        boxShadow: '0 8px 6px -6px black',
-                        height: '12em',
-                        width: '40em',
-                        backgroundColor: '#162b51',
-                        borderRadius: '1em'
-                    }}
                 >
-                    <div style={{ fontSize: '1.2em', color: '#ff005c' }}>
-                        {' '}
-                        <b>Earn while you stake</b>
+                    <div className="stalking-card-header">
+                        Earn while you stake
                     </div>
-                    <div style={{ fontSize: '0.8em', color: '#bdc2cd' }}>
-                        {' '}
+                    <div className="stalking-card-header-2">
                         <b>8% APY for a limited time only</b>
                     </div>
-                    <div style={{ fontSize: '1em', color: '#66738c' }}>
-                        {' '}
+                    <div className="stalking-card-header-info">
           Current round of staking ends on 05/02/2021
                     </div>
                     <Progress
-                        class="bla"
-                        // style={{ marginTop: '2em' }}
+                        className="progress-bar"
                         status="exception"
                         percent={65}
                         showInfo={false}
@@ -156,7 +136,7 @@ const Home = (account) => {
                     <Button
                         type="primary"
                         shape="round"
-                        style={{ background: 'linear-gradient(to right, #ff756d, #ff1a60)', marginTop: '0.7em' }}
+                        id="staking-button"
                         size={'small'}
                     >
           Stake
@@ -172,49 +152,31 @@ const Home = (account) => {
                 className="yield-pools"
                 style={{ marginBottom: '4em', display: 'flex' }}
             >
-                <div style={{ marginTop: '0.8em' }} id="yieldpool-card-begginer">
+                <div style={{ marginTop: '0.8em' }}>
                     <Card
                         bordered={false}
-                        style={{
-                            marginTop: '0.4em',
-                            boxShadow: '0 8px 6px -6px black',
-                            height: '20em',
-                            width: '18em',
-                            marginRight: '2em',
-                            backgroundColor: '#162b51',
-                            borderRadius: '1em'
-                        }}
+                        id="yieldpool-card"
                     >
-                        <div style={{ color: '#ff005c', fontSize: '1em' }}> <b> Beginner Pool </b> </div>
-                        <img src={logo} style={{ marginBottom: '0.5em' }} className="logo" alt="logo" />
-                        <text style={{ color: 'white', fontSize: '1.5em' }}> <b>50,000</b></text>
-                        <p style={{ color: '#5e6d87', fontSize: '1.2em' }}>50 wallets</p>
-
-
-                        <div style={{ color: 'green', fontSize: '1em' }}>
-                            {' '}
+                        <div className="yieldpool-header"> <b> Beginner Pool </b> </div>
+                        <img src={logo} className="logo-yieldpool-card" alt="logo" />
+                        <text className="yieldpool-amount"> <b>50,000</b></text>
+                        <p className="wallets-number-yieldpool">50 wallets</p>
+                        <div className="yieldpool-to-win">
                             <b>1200 to win</b>
                         </div>
-                        <div style={{ fontSize: '1em' }}>
-                            {' '}
-                            <b style={{ color: 'white' }}>1000 to enter</b>
+                        <div className="yieldpool-enter-amount">
+                            <b>1000 to enter</b>
                         </div>
-                        <div style={{ fontSize: '0.8em', color: 'grey' }}>80% chance</div>
-                        <div
-                            style={{ color: '#ff005c', fontSize: '1em', marginTop: '1.4em' }}
-                        >
+                        <div className="yieldpool-chance"> 80% chance</div>
+                        <div className="yieldpool-warning">
                             <b>Last chance! Filling Up!</b>
                         </div>
 
                         <Button
                             type="primary"
                             shape="round"
+                            id="staking-button"
                             onClick={toggle}
-                            style={{
-	                            background: 'linear-gradient(to right, #ff756d, #ff1a60)',
-                                width: '6em',
-                                marginTop: '1em'
-                            }}
                             size={'small'}
                         >
               Join
@@ -226,33 +188,21 @@ const Home = (account) => {
                 <div style={{ marginTop: '0.8em' }} id="yieldpool-card-shark">
                     <Card
                         bordered={false}
-                        style={{
-                            marginTop: '0.4em',
-                            boxShadow: '0 8px 6px -6px black',
-                            height: '20em',
-                            width: '18em',
-                            marginRight: '2em',
-                            backgroundColor: '#162b51',
-                            borderRadius: '1em'
-                        }}
+                        id="yieldpool-card"
                     >
-                        <div style={{ color: '#ff005c', fontSize: '1em' }}>  <b> Shark Pool </b> </div>
+                        <div className="yieldpool-header"> <b> Shark Pool </b> </div>
 
-                        <img src={logo} style={{ marginBottom: '0.5em' }} className="logo" alt="logo" />
-                        <text style={{ color: 'white', fontSize: '1.5em' }}> <b>500,000</b></text>
-                        <p style={{ color: '#5e6d87', fontSize: '1.2em' }}>20 wallets</p>
-                        <div style={{ color: 'green', fontSize: '1em' }}>
-                            {' '}
+                        <img src={logo} className="logo-yieldpool-card" alt="logo" />
+                        <text className="yieldpool-amount"> <b>500,000</b></text>
+                        <p className="wallets-number-yieldpool">20 wallets</p>
+                        <div className="yieldpool-to-win">
                             <b>1200 to win</b>
                         </div>
-                        <div style={{ fontSize: '1em' }}>
-                            {' '}
-                            <b style={{ color: 'white' }}>1000 to enter</b>
+                        <div className="yieldpool-enter-amount">
+                            <b>1000 to enter</b>
                         </div>
-                        <div style={{ fontSize: '0.8em', color: 'grey' }}>70% chance</div>
-                        <div
-                            style={{ color: '#ff005c', fontSize: '1em', marginTop: '1.4em' }}
-                        >
+                        <div className="yieldpool-chance">70% chance</div>
+                        <div className="yieldpool-warning" >
                             <b>Last chance! Filling Up!</b>
                         </div>
 
@@ -260,12 +210,7 @@ const Home = (account) => {
                             type="primary"
                             shape="round"
                             onClick={toggle}
-                            style={{
-	                            background: 'linear-gradient(to right, #ff756d, #ff1a60)',
-                                alignItems: 'center',
-                                width: '6em',
-                                marginTop: '1em'
-                            }}
+                            id="staking-button"
                             size={'small'}
                         >
               Join
@@ -276,44 +221,28 @@ const Home = (account) => {
                 <div style={{ marginTop: '0.8em' }} id="yieldpool-card-bigmoney">
                     <Card
                         bordered={false}
-                        title="i"
-                        style={{
-                            marginTop: '0.4em',
-                            boxShadow: '0 8px 6px -6px black',
-                            height: '20em',
-                            width: '18em',
-                            backgroundColor: '#162b51',
-                            borderRadius: '1em'
-                        }}
+                        id="yieldpool-card"
+                        title="placeholder-title"
                     >
-                        <div style={{ color: '#ff005c', fontSize: '1em' }}> <b> Big money Pool</b>  </div>
-                        <img src={logo} className="logo" alt="logo" />
-                        <text style={{ color: 'white', fontSize: '1.5em' }}> <b>500,000</b></text>
-                        <p style={{ color: '#5e6d87', fontSize: '1.2em' }}>5 wallets</p>
-                        <div style={{ color: 'green', fontSize: '1em' }}>
-                            {' '}
+                        <div className="yieldpool-header"> <b> Big money Pool</b>  </div>
+                        <img src={logo} className="logo-yieldpool-card" alt="logo" />
+                        <text className="yieldpool-amount"> <b>500,000</b></text>
+                        <p className="wallets-number-yieldpool">5 wallets</p>
+                        <div className="yieldpool-to-win">
                             <b>1200 to win</b>
                         </div>
-                        <div style={{ fontSize: '1em' }}>
-                            {' '}
-                            <b style={{ color: 'white' }}>1000 to enter</b>
+                        <div className="yieldpool-enter-amount">
+                            <b>1000 to enter</b>
                         </div>
-                        <div style={{ fontSize: '0.8em', color: 'grey' }}>40% chance</div>
-                        <div
-                            style={{ color: '#ff005c', fontSize: '1em', marginTop: '1.4em' }}
-                        >
-                            {' '}
+                        <div className="yieldpool-chance">40% chance</div>
+                        <div className="yieldpool-warning">
                             <b>Last chance! Filling Up!</b>
                         </div>
                         <Button
                             type="primary"
                             shape="round"
                             onClick={toggle}
-                            style={{
-	                            background: 'linear-gradient(to right, #ff756d, #ff1a60)',
-                                width: '6em',
-                                marginTop: '1em'
-                            }}
+                            id="staking-button"
                             size={'small'}
                         >
               Join
@@ -327,30 +256,23 @@ const Home = (account) => {
             </div>
             { account.account === "" ?
                 <Card bordered={false}
-                    style={{ width: '58em',
-                        height: '20em',
-                        marginTop: '0.4em',
-                        boxShadow: '0 8px 6px -6px black',
-                        backgroundColor: '#162b51',
-                        textAlign: 'center',
-                        verticalAlign: 'middle',
-                        lineHeight: '20em'
-                    }}
+                    id="placeholder-card"
                 >
                     <Button
                         type="primary"
                         shape="round"
-                        style={{
-	                            background: 'linear-gradient(to right, #ff756d, #ff1a60)',
-                            marginTop: '1em'
-                        }}
+                        id="staking-button"
+                        // style={{
+	                    //         background: 'linear-gradient(to right, #ff756d, #ff1a60)',
+                        //     marginTop: '1em'
+                        // }}
                         size={'medium'}
                     >
                           Connect
                     </Button>
 
                 </Card> :
-                <Table style={{ width: '65em' }} columns={columns} dataSource={data} />}
+                <Table id="table" columns={columns} dataSource={data} pagination={false} />}
         </div>
     );
 };
