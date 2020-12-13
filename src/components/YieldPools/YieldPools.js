@@ -86,34 +86,34 @@ const YieldPools = () => {
             <div style={{ display: 'flex', justifyContent: 'left', marginLeft: '5em' }}>
                 <div style={{ display: 'flex', flexDirection: 'column', marginTop: '2em' }}>
                     <div style={{ marginTop: '0.8em' }} >
-                        <Card id="yieldpool-card-beginner" className="prophet-card active" >
+                        <Card style={{ cursor: 'pointer' }} onClick={showBeginnerPoolCard} id="yieldpool-card-beginner" className="prophet-card active" >
                             <div style={{ fontSize: '1em', color: '#ff005c', marginBottom: '0.5em' }}> <b>Beginner Pool</b></div>
                             <img src={logo} style={{ marginRight: '0.5em', fontSize: '0.6em' }} className="logo" alt="logo" />
                             <text style={{ fontSize: '1em', color: 'white' }}> <b> 50,000 total in pool </b></text>
                             <div> <img src={logo} style={{ marginRight: '0.4em', fontSize: '0.6em' }} className="logo" alt="logo" />  <span style={{ color: 'green', fontSize: '1em' }}> <b>1200 jackpot per ante </b></span> </div>
-                            <div onClick={showBeginnerPoolCard} style={{ marginRight: '0em', textAlign: 'right', cursor: 'pointer', color: '#ff005c' }}> <RightOutlined/> </div>
+                            <div style={{ marginRight: '0em', textAlign: 'right', cursor: 'pointer', color: '#ff005c' }}> <RightOutlined/> </div>
                             <div style={{ color: '#5e6d87' }}>50 wallets in, 40 wallets win</div>
                         </Card>
                     </div>
 
                     <div style={{ marginTop: '0.8em' }}>
-                        <Card id="yieldpool-card-shark" className="prophet-card">
+                        <Card style={{ cursor: 'pointer' }} onClick={showSharkPoolCard} id="yieldpool-card-shark" className="prophet-card">
                             <div style={{ fontSize: '1em', color: '#ff005c', marginBottom: '0.5em' }}> <b>Shark Pool</b></div>
                             <img src={logo} style={{ marginRight: '0.5em', fontSize: '0.6em' }} className="logo" alt="logo" />
                             <text style={{ fontSize: '1em', color: 'white' }}> <b> 50,000 total in pool </b></text>
                             <div> <img src={logo} style={{ marginRight: '0.4em', fontSize: '0.6em' }} className="logo" alt="logo" />  <span style={{ color: 'green', fontSize: '1em' }}> <b>1200 jackpot per ante </b></span> </div>
-                            <div onClick={showSharkPoolCard} style={{ marginRight: '0em', textAlign: 'right', cursor: 'pointer', color: '#ff005c' }}> <RightOutlined/> </div>
+                            <div style={{ marginRight: '0em', textAlign: 'right', cursor: 'pointer', color: '#ff005c' }}> <RightOutlined/> </div>
                             <div style={{ color: '#5e6d87' }}>50 wallets in, 40 wallets win</div>
                         </Card>
                     </div>
 
                     <div style={{ marginTop: '0.8em' }} >
-                        <Card id="yieldpool-card-bigmoney" className="prophet-card">
+                        <Card style={{ cursor: 'pointer' }} onClick={showBigMoneyPoolCard} id="yieldpool-card-bigmoney" className="prophet-card">
                             <div style={{ fontSize: '1em', color: '#ff005c', marginBottom: '0.5em' }}> <b>Big Money Pool</b></div>
                             <img src={logo} style={{ marginRight: '0.5em', fontSize: '0.6em' }} className="logo" alt="logo" />
                             <text style={{ fontSize: '1em', color: 'white' }}> <b> 600,000 total in pool </b></text>
                             <div> <img src={logo} style={{ marginRight: '0.4em', fontSize: '0.6em' }} className="logo" alt="logo" />  <span style={{ color: 'green', fontSize: '1em' }}> <b>200000 jackpot per ante </b></span> </div>
-                            <div onClick={showBigMoneyPoolCard} style={{ marginRight: '0em', textAlign: 'right', cursor: 'pointer', color: '#ff005c' }}> <RightOutlined/> </div>
+                            <div style={{ marginRight: '0em', textAlign: 'right', cursor: 'pointer', color: '#ff005c' }}> <RightOutlined/> </div>
                             <div style={{ color: '#5e6d87' }}>50 wallets in, 40 wallets win</div>
                         </Card>
                     </div>
