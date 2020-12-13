@@ -28,5 +28,7 @@
 
 
 @media (min-width: 120em) {
- 
+ .ant-modal-content {
+     width: 55em;
+ }
 }
