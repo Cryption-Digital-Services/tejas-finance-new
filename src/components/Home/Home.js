@@ -144,7 +144,7 @@ const Home = (account) => {
                 </Card>
             </div>
 
-            <div style={{ marginTop: '4em', fontSize: '1.4em', color: 'white' }}>
+            <div id="prophet-pool-title">
                 <b>Prophet Pools</b>
             </div>
 
@@ -251,7 +251,7 @@ const Home = (account) => {
                 </div>
             </div>
 
-            <div style={{ marginTop: '2em', marginBottom: '1.5em', fontSize: '1.4em' }}>
+            <div id="your-activity-title">
                 <b style={{ color: 'white' }}>Your Activity</b>
             </div>
             { account.account === "" ?

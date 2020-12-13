@@ -57,10 +57,9 @@
 }
 
 .leftnav {
-  flex-grow: 1; /* this is the important bit */
+  flex-grow: 1;
 }
 
-/* the rest is just for looks */
 
 a {
   padding: 1em;

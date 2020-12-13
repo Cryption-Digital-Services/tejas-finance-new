@@ -4,6 +4,18 @@
    margin-left: 7em;
 }
 
+#prophet-pool-title {
+   margin-top: 4em;
+   font-size: 1.2em;
+   color: white;
+}
+#your-activity-title {
+   margin-top: 2em;
+   margin-bottom: 1em;
+   font-size: 1.2em;
+   color: white;
+}
+
 #lifetime-earnings {
    background-color: #162b51;
    margin-top: 0.4em;
@@ -226,6 +238,13 @@ thead[class*="ant-table-thead"] th{
       margin-top: 2em;
       height: 2em;
       width: 6em;
+   }
+
+   #prophet-pool-title {
+      font-size: 2em;
+   }
+   #your-activity-title {
+      font-size: 2em;
    }
 
    #yieldpool-card-bigmoney .ant-card .ant-card-head {
