@@ -96,7 +96,7 @@ const Home = (account) => {
     ];
 
     return (
-        <div>
+        <div style={{ marginLeft: '5em' }}>
             <div style={{ display: 'flex', marginTop: '2em', fontSize: '1.4em' }}>
                 <Card
                     bordered = {false}

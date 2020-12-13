@@ -154,13 +154,13 @@ const YieldPools = () => {
                         <div style={{ marginTop: '2em', color: '#ff005c' }}><b>Chances of winning:</b></div>
                         <div>{cardDetails.winChances}</div>
 
-                        <div style={{ fontSize: '1.5vh', marginTop: '2em', color: '#5e6d87' }}>
-                            <p> DISCLAIMER: Each pool runs for however long it takes to fill. As soon as it fills, the pool will close and your earnings will dispense if your wallet is declared part of the winnings. Each ante you enter has an equal chance of winning and an equal chance of losing in the overall pool.  </p>
-                            <p>DISCLAIMER: The total cost of joining a pool is the ante plus. Ethereum gas fees. We have no control over gas fees.</p>
+                        <div style={{ marginTop: '2em', color: '#5e6d87' }}>
+                            <p style={{ fontSize: '1.5vh' }}> DISCLAIMER: Each pool runs for however long it takes to fill. As soon as it fills, the pool will close and your earnings will dispense if your wallet is declared part of the winnings. Each ante you enter has an equal chance of winning and an equal chance of losing in the overall pool.  </p>
+                            <p style={{ fontSize: '1.5vh' }}>DISCLAIMER: The total cost of joining a pool is the ante plus. Ethereum gas fees. We have no control over gas fees.</p>
                         </div>
 
 
-                        <Button type="primary" shape="round" style={{ background: 'linear-gradient(to right, #ff756d, #ff1a60)', width: '6em', marginTop: '1em' }} size={'medium'}>
+                        <Button id="pool-join-button" type="primary" shape="round" size={'medium'}>
           Join
                         </Button>
                     </Card>

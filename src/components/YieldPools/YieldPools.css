@@ -46,6 +46,58 @@
     border-radius: 1em;
 }
 
+#pool-join-button {
+    background: linear-gradient(to right, #ff756d, #ff1a60);
+    margin-top: 1em;
+    width: 6em;
+ }
+
+#pool-join-button:hover {
+    background: linear-gradient(to right, #ed645c, #d10a47);
+ }
+
+@media (min-width: 60em) {
+    #prophet-pool-card {
+        height: 12em;
+        width: 30em;
+        line-height: 10.5em;
+    }
+    .prophet-card {
+        height: 12em !important;
+        width: 30.5em !important;
+    }
+
+    #current-total-pool-card {
+        height: 12em;
+        width: 33.5em;
+    }
+    #card-details-join {
+        height: 57em;
+        width: 30em;
+    }
+  }
+
+@media (min-width: 100em) {
+    #prophet-pool-card {
+        height: 13.5em;
+        width: 32.5em;
+        line-height: 10.5em;
+    }
+    .prophet-card {
+        height: 13.5em !important;
+        width: 32.5em !important;
+    }
+
+    #current-total-pool-card {
+        height: 13.5em;
+        width: 35em;
+    }
+    #card-details-join {
+        height: 56em;
+        width: 30em;
+    }
+  }
+
 
 @media (min-width: 120em) {
     #prophet-pool-card {
