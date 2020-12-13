@@ -37,6 +37,10 @@
   border-color: #ff4d4f !important;
 }
 
+.ant-btn:hover {
+  background: linear-gradient(to right, #ed645c, #d10a47);
+}
+
 .landing-page {
   background: url('../src/assets/landingbg.jpg') 100% 100% no-repeat; 
   background-attachment: fixed;

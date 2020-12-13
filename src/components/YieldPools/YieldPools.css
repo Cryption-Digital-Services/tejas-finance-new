@@ -1,3 +1,15 @@
+#prophet-pool-card {
+    margin-top: 0.4em; 
+    box-shadow: 0 8px 6px -6px black;
+    height: 11em;
+    width: 26em;
+    margin-right: 4em;
+    background-color: #162b51;
+    text-align: center;
+    vertical-align: middle; 
+    line-height: 8em;
+    border-radius: 1em;
+}
 
 .prophet-card {
     margin-top: 0.4em !important;
@@ -7,9 +19,52 @@
     background-color: #162b51 !important;
     border-radius: 1em !important;
     border-color: #162b51 !important;
-    /* borderRightColor: '#ff005c', borderRightWidth: 'medium', borderBottomWidth: 'medium' */
+}
+
+#current-total-pool-card {
+    margin-top: 0.4em; 
+    box-shadow: 0 8px 6px -6px black;
+    height: 11em;
+    width: 30em;
+    margin-right: 2em;
+    background-color: #162b51;
+    border-radius: 1em;
 }
 
 .active {
     border-bottom-color: #ff005c !important;
+}
+
+#card-details-join {
+    margin-top: 0.4em; 
+    box-shadow: 0 8px 6px -6px black;
+    height: 49em;
+    width: 26em;
+    margin-left: 4em;
+    background-color: #162b51;
+    color: white;
+    border-radius: 1em;
+}
+
+
+@media (min-width: 120em) {
+    #prophet-pool-card {
+        height: 16.5em;
+        width: 35em;
+        line-height: 13.5em;
+    }
+    .prophet-card {
+        height: 16.5em !important;
+        width: 35em !important;
+    }
+
+    #current-total-pool-card {
+        height: 16.5em;
+        width: 40em;
+    }
+    #card-details-join {
+        height: 60em;
+        width: 35em;
+    }
+ 
 }
