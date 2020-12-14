@@ -101,7 +101,7 @@ const YieldPools = () => {
                             <div className="pool-card-header"> <b>Shark Pool</b></div>
                             <img src={logo} id="pool-card-logo" alt="logo" />
                             <text className="pool-card-total"> <b> 50,000 total in pool </b></text>
-                            <div> <img src={logo} id="pool-card-logo"  className="pool-card-logo" alt="logo" />  <span className="jackpot-per-ante"> <b>1200 jackpot per ante </b></span> </div>
+                            <div> <img src={logo} id="pool-card-logo" className="pool-card-logo" alt="logo" />  <span className="jackpot-per-ante"> <b>1200 jackpot per ante </b></span> </div>
                             <div className="pool-card-arrow"> <RightOutlined/> </div>
                             <div className="pool-card-wallet-info">50 wallets in, 40 wallets win</div>
                         </Card>
