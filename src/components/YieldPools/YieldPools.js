@@ -71,15 +71,15 @@ const YieldPools = () => {
 
                 <div style={{ marginTop: '0.8em' }}>
                     <Card id="prophet-pool-card" bordered={false}>
-                        <span style={{ color: '#ff005c' }}><i style={{ fontSize: '6vh', marginRight: '0.3em' }} className="fa fa-usd" aria-hidden="true"/> <span style={{ fontSize: '3vh' }}> <b>Prophet Pools</b> </span></span>
+                        <span className="prophet-pool-card-header"><i id="dollar-icon" className="fa fa-usd" aria-hidden="true"/> <span> <b>Prophet Pools</b> </span></span>
                     </Card>
                 </div>
 
                 <div style={{ marginTop: '0.8em' }}>
                     <Card id="current-total-pool-card" bordered={false}>
-                        <div style={{ fontSize: '2vh', color: '#ff005c' }}><b>Your current total inctive yield pools:</b></div>
-                        <img src={logo} style={{ marginBottom: '1.5em', marginRight: '0.4em', fontSize: '2vh' }} className="logo" alt="logo" />
-                        <span style={{ fontSize: '5.5vh', color: '#ff005c' }}> <b>0</b></span>
+                        <div id="current-total-card-header"><b>Your current total inctive yield pools:</b></div>
+                        <img src={logo} id="current-total-card-logo" />
+                        <span id="current-total"> <b>0</b></span>
                     </Card>
                 </div>
             </div>
@@ -87,76 +87,76 @@ const YieldPools = () => {
                 <div style={{ display: 'flex', flexDirection: 'column', marginTop: '2em' }}>
                     <div style={{ marginTop: '0.8em' }} >
                         <Card style={{ cursor: 'pointer' }} onClick={showBeginnerPoolCard} id="yieldpool-card-beginner" className="prophet-card active" >
-                            <div style={{ fontSize: '1.5vh', color: '#ff005c', marginBottom: '0.5em' }}> <b>Beginner Pool</b></div>
-                            <img src={logo} style={{ marginRight: '0.5em', fontSize: '1vh' }} className="logo" alt="logo" />
-                            <text style={{ fontSize: '1.5vh', color: 'white' }}> <b> 50,000 total in pool </b></text>
-                            <div> <img src={logo} style={{ marginRight: '0.4em', fontSize: '1vh' }} className="logo" alt="logo" />  <span style={{ color: 'green', fontSize: '1.5vh' }}> <b>1200 jackpot per ante </b></span> </div>
-                            <div style={{ marginRight: '0em', textAlign: 'right', cursor: 'pointer', color: '#ff005c' }}> <RightOutlined/> </div>
-                            <div style={{ color: '#5e6d87', fontSize: '1.5vh' }}>50 wallets in, 40 wallets win</div>
+                            <div className="pool-card-header"> <b>Beginner Pool</b></div>
+                            <img src={logo} id="pool-card-logo" alt="logo" />
+                            <text className="pool-card-total"> <b> 50,000 total in pool </b></text>
+                            <div> <img src={logo} id="pool-card-logo" className="pool-card-logo" alt="logo" />  <span className="jackpot-per-ante"> <b>1200 jackpot per ante </b></span> </div>
+                            <div className="pool-card-arrow"> <RightOutlined/> </div>
+                            <div className="pool-card-wallet-info"> 50 wallets in, 40 wallets win</div>
                         </Card>
                     </div>
 
                     <div style={{ marginTop: '0.8em' }}>
                         <Card style={{ cursor: 'pointer' }} onClick={showSharkPoolCard} id="yieldpool-card-shark" className="prophet-card">
-                            <div style={{ fontSize: '1.5vh', color: '#ff005c', marginBottom: '0.5em' }}> <b>Shark Pool</b></div>
-                            <img src={logo} style={{ marginRight: '0.5em', fontSize: '1vh' }} className="logo" alt="logo" />
-                            <text style={{ fontSize: '1.5vh', color: 'white' }}> <b> 50,000 total in pool </b></text>
-                            <div> <img src={logo} style={{ marginRight: '0.4em', fontSize: '1vh' }} className="logo" alt="logo" />  <span style={{ color: 'green', fontSize: '1.5vh' }}> <b>1200 jackpot per ante </b></span> </div>
-                            <div style={{ marginRight: '0em', textAlign: 'right', cursor: 'pointer', color: '#ff005c' }}> <RightOutlined/> </div>
-                            <div style={{ color: '#5e6d87', fontSize: '1.5vh' }}>50 wallets in, 40 wallets win</div>
+                            <div className="pool-card-header"> <b>Shark Pool</b></div>
+                            <img src={logo} id="pool-card-logo" alt="logo" />
+                            <text className="pool-card-total"> <b> 50,000 total in pool </b></text>
+                            <div> <img src={logo} id="pool-card-logo"  className="pool-card-logo" alt="logo" />  <span className="jackpot-per-ante"> <b>1200 jackpot per ante </b></span> </div>
+                            <div className="pool-card-arrow"> <RightOutlined/> </div>
+                            <div className="pool-card-wallet-info">50 wallets in, 40 wallets win</div>
                         </Card>
                     </div>
 
                     <div style={{ marginTop: '0.8em' }} >
                         <Card style={{ cursor: 'pointer' }} onClick={showBigMoneyPoolCard} id="yieldpool-card-bigmoney" className="prophet-card">
-                            <div style={{ fontSize: '1.5vh', color: '#ff005c', marginBottom: '0.5em' }}> <b>Big Money Pool</b></div>
-                            <img src={logo} style={{ marginRight: '0.5em', fontSize: '1vh' }} className="logo" alt="logo" />
-                            <text style={{ fontSize: '1.5vh', color: 'white' }}> <b> 600,000 total in pool </b></text>
-                            <div> <img src={logo} style={{ marginRight: '0.4em', fontSize: '1vh' }} className="logo" alt="logo" />  <span style={{ color: 'green', fontSize: '1.5vh' }}> <b>200000 jackpot per ante </b></span> </div>
-                            <div style={{ marginRight: '0em', textAlign: 'right', cursor: 'pointer', color: '#ff005c' }}> <RightOutlined/> </div>
-                            <div style={{ color: '#5e6d87', fontSize: '1.5vh' }}>50 wallets in, 40 wallets win</div>
+                            <div className="pool-card-header"> <b>Big Money Pool</b></div>
+                            <img src={logo} id="pool-card-logo" alt="logo" />
+                            <text className="pool-card-total" > <b> 600,000 total in pool </b></text>
+                            <div> <img src={logo} id="pool-card-logo" className="pool-card-logo" alt="logo" />  <span className="jackpot-per-ante"> <b>200000 jackpot per ante </b></span> </div>
+                            <div className="pool-card-arrow"> <RightOutlined/> </div>
+                            <div className="pool-card-wallet-info">50 wallets in, 40 wallets win</div>
                         </Card>
                     </div>
 
                 </div>
                 <div style={{ marginTop: '3.2em' }}>
                     <Card id="card-details-join" bordered={false}>
-                        <div style={{ fontSize: '2vh', color: '#ff005c' }}> <b>{cardDetails.type}</b></div>
-                        <span style={{ fontSize: '1.5vh' }}>{cardDetails.walletsIn} wallets in, {cardDetails.walletsWin} wallets win</span>
-                        <p style={{ fontSize: '1.5vh' }}>Wallets in so far: <b>3</b></p>
+                        <div className="card-details-join-type"> <b>{cardDetails.type}</b></div>
+                        <span className="card-details-join-wallets-info">{cardDetails.walletsIn} wallets in, {cardDetails.walletsWin} wallets win</span>
+                        <p className="wallets-in">Wallets in so far: <b>3</b></p>
                         <div style={{ display: 'flex' }}>
                             <div style={{ display: 'flex', flexDirection: 'column' }}>
-                                <div>Current Balance:</div>
-                                <div><img src={logo} style={{ marginRight: '0.3em', fontSize: '1vh' }} className="logo" alt="logo" />{cardDetails.currentBalance}</div>
+                                <div className="card-details-current-balance-header" >Current Balance:</div>
+                                <div className="card-details-current-balance"><img src={logo} className="card-details-logo" alt="logo" />{cardDetails.currentBalance}</div>
                             </div>
                             <div style={{ display: 'flex', flexDirection: 'column', marginLeft: '2em' }}>
-                                <div style={{ color: '#ff005c' }}>Minimum Ante to join:</div>
-                                <div><img src={logo} style={{ marginRight: '0.3em', fontSize: '1vh' }} className="logo" alt="logo" />{cardDetails.ante}</div>
+                                <div className="card-details-min-ante">Minimum Ante to join:</div>
+                                <div className="card-details-min-ante-amount"><img src={logo} className="card-details-logo" alt="logo" />{cardDetails.ante}</div>
                             </div>
                         </div>
 
-                        <div style={{ marginTop: '2em' }}><b>Number of Antes you want to put in:</b></div>
-                        <p style={{ fontSize: '1.5vh' }}> Minimum 1, Maximum 4 </p>
+                        <div className="card-details-no-ante-header"><b>Number of Antes you want to put in:</b></div>
+                        <p className="card-details-ante-info"> Minimum 1, Maximum 4 </p>
                         <InputNumber min={1} max={10} defaultValue={1} />
 
 
                         <div style={{ display: 'flex' }}>
                             <div style={{ display: 'flex', flexDirection: 'column', marginTop: '2em' }}>
-                                <div>Your Total ante up:</div>
-                                <div><img src={logo} style={{ marginRight: '0.3em', fontSize: '1vh' }} className="logo" alt="logo" />{cardDetails.anteUp}</div>
+                                <div className="card-details-total-ante-header">Your Total ante up:</div>
+                                <div><img src={logo} className="card-details-logo" alt="logo" />{cardDetails.anteUp}</div>
                             </div>
-                            <div style={{ display: 'flex', flexDirection: 'column', marginLeft: '2em', marginTop: '2em' }}>
+                            <div className="card-details-you-could-win" style={{ display: 'flex', flexDirection: 'column', marginLeft: '2em', marginTop: '2em' }}>
                                 <div>You could win:</div>
-                                <div><img src={logo} style={{ marginRight: '0.3em', fontSize: '1vh' }} className="logo" alt="logo" />{cardDetails.winNumber}</div>
+                                <div><img src={logo} className="card-details-logo" alt="card-details-logo" />{cardDetails.winNumber}</div>
                             </div>
                         </div>
 
-                        <div style={{ marginTop: '2em', color: '#ff005c' }}><b>Chances of winning:</b></div>
+                        <div className="card-details-chances-win"><b>Chances of winning:</b></div>
                         <div>{cardDetails.winChances}</div>
 
-                        <div style={{ marginTop: '2em', color: '#5e6d87' }}>
-                            <p style={{ fontSize: '1.5vh' }}> DISCLAIMER: Each pool runs for however long it takes to fill. As soon as it fills, the pool will close and your earnings will dispense if your wallet is declared part of the winnings. Each ante you enter has an equal chance of winning and an equal chance of losing in the overall pool.  </p>
-                            <p style={{ fontSize: '1.5vh' }}>DISCLAIMER: The total cost of joining a pool is the ante plus. Ethereum gas fees. We have no control over gas fees.</p>
+                        <div className="card-details-disclaimer-header">
+                            <p className="card-details-disclaimer-info"> DISCLAIMER: Each pool runs for however long it takes to fill. As soon as it fills, the pool will close and your earnings will dispense if your wallet is declared part of the winnings. Each ante you enter has an equal chance of winning and an equal chance of losing in the overall pool.  </p>
+                            <p className="card-details-disclaimer-info">DISCLAIMER: The total cost of joining a pool is the ante plus. Ethereum gas fees. We have no control over gas fees.</p>
                         </div>
 
 

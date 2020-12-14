@@ -1,122 +1,341 @@
-#prophet-pool-card {
-    margin-top: 0.4em; 
-    box-shadow: 0 8px 6px -6px black;
-    height: 11em;
-    width: 26em;
-    margin-right: 4em;
-    background-color: #162b51;
-    text-align: center;
-    vertical-align: middle; 
-    line-height: 8em;
-    border-radius: 1em;
-}
 
-.prophet-card {
-    margin-top: 0.4em !important;
-    box-shadow: 0 8px 6px -6px black !important;
-    height: 13em !important;
-    width: 26em !important;
-    background-color: #162b51 !important;
-    border-radius: 1em !important;
-    border-color: #162b51 !important;
-}
-
-#current-total-pool-card {
-    margin-top: 0.4em; 
-    box-shadow: 0 8px 6px -6px black;
-    height: 11em;
-    width: 30em;
-    margin-right: 2em;
-    background-color: #162b51;
-    border-radius: 1em;
-}
-
-.active {
-    border-bottom-color: #ff005c !important;
-}
-
-#card-details-join {
-    margin-top: 0.4em; 
-    box-shadow: 0 8px 6px -6px black;
-    height: 49em;
-    width: 26em;
-    margin-left: 4em;
-    background-color: #162b51;
-    color: white;
-    border-radius: 1em;
-}
-
-#pool-join-button {
-    background: linear-gradient(to right, #ff756d, #ff1a60);
-    margin-top: 1em;
-    width: 6em;
- }
-
-#pool-join-button:hover {
-    background: linear-gradient(to right, #ed645c, #d10a47);
- }
-
-@media (min-width: 60em) {
+ @media (min-width: 768px) {
     #prophet-pool-card {
-        height: 12em;
-        width: 30em;
-        line-height: 10.5em;
+        margin-top: 0.4em; 
+        box-shadow: 0 8px 6px -6px black;
+        height: 11em;
+        width: 26em;
+        margin-right: 4em;
+        background-color: #162b51;
+        text-align: center;
+        vertical-align: middle; 
+        line-height: 8em;
+        border-radius: 1em;
     }
+    
+    .prophet-pool-card-header {
+        color: #ff005c;
+        font-size: 2em;
+    }
+    
+    #dollar-icon {
+        font-size: 2em;
+        margin-right: 0.3em;
+    }
+    
+    #current-total-card-header {
+        font-size: 1.5em;
+        color: #ff005c;
+    }
+    
+    #current-total-card-logo {
+        margin-bottom: 1em;
+        margin-right: 0.4em;
+        height: 2em;
+    }
+    
+    #current-total{
+        font-size: 2em;
+        color: #ff005c;
+    }
+    
     .prophet-card {
-        height: 12em !important;
-        width: 30.5em !important;
+        margin-top: 0.4em !important;
+        box-shadow: 0 8px 6px -6px black !important;
+        height: 13em !important;
+        width: 26em !important;
+        background-color: #162b51 !important;
+        border-radius: 1em !important;
+        border-color: #162b51 !important;
+    }
+    
+    .pool-card-header{
+        font-size: 1.5em;
+        margin-bottom: 0.5em;
+        color: #ff005c;
+    }
+    
+    #pool-card-logo{
+        height: 1em;
+        margin-right: 0.4em;
+    }
+    
+    .pool-card-total{
+        font-size: 1em;
+        color: white;
+    }
+    
+    .jackpot-per-ante{
+        font-size: 0.8em;
+        color: green;
+    }
+    
+    .pool-card-arrow{
+        font-size: 1em;
+        color: #ff005c;
+        text-align: right;
+        cursor: pointer;
+    }
+    
+    .pool-card-wallet-info{
+        font-size: 1em;
+        color: #5e6d87;
+    }
+    
+    #current-total-pool-card {
+        margin-top: 0.4em; 
+        box-shadow: 0 8px 6px -6px black;
+        height: 11em;
+        width: 26em;
+        margin-right: 2em;
+        background-color: #162b51;
+        border-radius: 1em;
+    }
+    
+    .active {
+        border-bottom-color: #ff005c !important;
+    }
+    
+    #card-details-join {
+        margin-top: 0.4em; 
+        box-shadow: 0 8px 6px -6px black;
+        height: 54em;
+        width: 26em;
+        margin-left: 4em;
+        background-color: #162b51;
+        color: white;
+        border-radius: 1em;
     }
 
-    #current-total-pool-card {
-        height: 12em;
-        width: 33.5em;
+    .card-details-join-type {
+        font-size: 1.5em;
+        color: #ff005c;
     }
-    #card-details-join {
-        height: 57em;
-        width: 30em;
+
+    .card-details-join-wallets-info {
+        font-size: 1em;
     }
+
+    .wallets-in {
+        font-size: 1em;
+    }
+
+    .card-details-min-ante {
+        color: #ff005c;
+        margin-right: 0.3em;
+    }
+
+    .card-details-logo {
+        height: 1em;
+        margin-right: 0.3em;
+    }
+
+    .card-details-no-ante-header {
+        margin-top: 2em;
+    }
+
+    .card-details-ante-info {
+       font-size: 1em; 
+    }
+
+    .card-details-chances-win {
+        margin-top: 2em;
+        color: #ff005c;
+    }
+
+    .card-details-disclaimer-header {
+       color: #5e6d87;
+       margin-top: 2em;
+    }
+
+    
+    #pool-join-button {
+        background: linear-gradient(to right, #ff756d, #ff1a60);
+        margin-top: 1em;
+        width: 6em;
+     }
+    
+    #pool-join-button:hover {
+        background: linear-gradient(to right, #ed645c, #d10a47);
+     }
   }
 
-@media (min-width: 100em) {
+@media (min-width: 1500px) {
     #prophet-pool-card {
-        height: 13.5em;
-        width: 32.5em;
-        line-height: 10.5em;
-    }
-    .prophet-card {
-        height: 13.5em !important;
-        width: 32.5em !important;
+        height: 15em;
+        width: 30em;
+        line-height: 12em;
     }
 
     #current-total-pool-card {
-        height: 13.5em;
-        width: 35em;
-    }
-    #card-details-join {
-        height: 56em;
+        height: 15em;
         width: 30em;
     }
+    .prophet-pool-card-header {
+        font-size: 2.5em;
+    }
+    
+    #dollar-icon {
+        font-size: 2.5em;
+    }
+    
+    #current-total-card-header {
+        font-size: 1.68em;
+        color: #ff005c;
+    }
+    
+    #current-total-card-logo {
+        height: 2.5em;
+    }
+    
+    #current-total{
+        font-size: 2.5em;
+    }
+    
+    .prophet-card {
+        height: 17em !important;
+        width: 30em !important;
+    }
+    
+    .pool-card-header{
+        font-size: 2em;
+    }
+    
+    #pool-card-logo{
+        height: 1.5em;
+    }
+    
+    .pool-card-total{
+        font-size: 1.5em;
+    }
+    
+    .jackpot-per-ante{
+        font-size: 1.3em;
+        color: green;
+    }
+    
+    .pool-card-arrow{
+        font-size: 1.5em;
+    }
+    
+    .pool-card-wallet-info{
+        font-size: 1.5em;
+    }
+    
+    
+    #card-details-join {
+        height: 58em;
+        width: 30em;
+    }
+
+    .card-details-join-type {
+        font-size: 2em;
+    }
+
+    .card-details-join-wallets-info {
+        font-size: 1.5em;
+    }
+
+    .wallets-in {
+        font-size: 1.5em;
+    }
+
+    .card-details-logo {
+        height: 1.5em;
+    }
+
+    .card-details-ante-info {
+       font-size: 1.5em; 
+    }
+    
   }
 
 
-@media (min-width: 120em) {
+@media (min-width: 1824px) {
     #prophet-pool-card {
-        height: 16.5em;
-        width: 35em;
-        line-height: 13.5em;
-    }
-    .prophet-card {
-        height: 16.5em !important;
-        width: 35em !important;
+        height: 19em;
+        width: 34em;
+        line-height: 16em;
     }
 
     #current-total-pool-card {
-        height: 16.5em;
-        width: 40em;
+        height: 15em;
+        width: 30em;
     }
+    .prophet-pool-card-header {
+        font-size: 3em;
+    }
+    
+    #dollar-icon {
+        font-size: 3em;
+    }
+    
+    #current-total-card-header {
+        font-size: 1.9em;
+        color: #ff005c;
+    }
+    
+    #current-total-card-logo {
+        height: 3em;
+    }
+    
+    #current-total{
+        font-size: 3em;
+    }
+    
+    .prophet-card {
+        height: 21em !important;
+        width: 34em !important;
+    }
+    
+    .pool-card-header{
+        font-size: 2.5em;
+    }
+    
+    #pool-card-logo{
+        height: 1.5em;
+    }
+    
+    .pool-card-total{
+        font-size: 2em;
+    }
+    
+    .jackpot-per-ante{
+        font-size: 1.6em;
+        color: green;
+    }
+    
+    .pool-card-arrow{
+        font-size: 2em;
+    }
+    
+    .pool-card-wallet-info{
+        font-size: 2em;
+    }
+    
+    
     #card-details-join {
-        height: 60em;
-        width: 35em;
+        height: 62em;
+        width: 34em;
     }
- 
-}
+
+    .card-details-join-type {
+        font-size: 2.5em;
+    }
+
+    .card-details-join-wallets-info {
+        font-size: 1.5em;
+    }
+
+    .wallets-in {
+        font-size: 2em;
+    }
+
+    .card-details-logo {
+        height: 2em;
+    }
+
+    .card-details-ante-info {
+       font-size: 2em; 
+    }
+  }

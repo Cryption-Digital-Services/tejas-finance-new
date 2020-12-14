@@ -168,7 +168,7 @@ function App () {
     return (
         App !== true ?
             <Router>
-                <div className="landing-page" style={{ width: '140em', height: '100em' }}>
+                <div className="landing-page" style={{ width: '100%', height: '200vh' }}>
                     <header className="fixednav">
                         <nav className="leftnav">
                             <a href="#" className="rightnav"> <img src={logo} className="logo" alt="logo" /> <b>prophet</b></a>
@@ -226,7 +226,7 @@ function App () {
                                 </div>
                                 <Switch>
                                     <Route exact path="/">
-                                        {<Redirect to="/home" />}
+                                        {<Redirect to="/prophetpools" />}
                                     </Route>
                                     <Route path="/home" render={() => <Home account={account} />} />
                                     <Route exact path="/prophetPools" component={YieldPools} />

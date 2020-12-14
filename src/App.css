@@ -4,6 +4,7 @@
 .App {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   background-color: #162035 !important;
+  height: 200vh;
 }
 
 .ant-layout{
