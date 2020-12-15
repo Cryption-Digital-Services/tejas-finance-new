@@ -226,7 +226,7 @@ function App () {
                                 </div>
                                 <Switch>
                                     <Route exact path="/">
-                                        {<Redirect to="/prophetpools" />}
+                                        {<Redirect to="/home" />}
                                     </Route>
                                     <Route path="/home" render={() => <Home account={account} />} />
                                     <Route exact path="/prophetPools" component={YieldPools} />

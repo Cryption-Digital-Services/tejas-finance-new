@@ -1,7 +1,7 @@
 
 
-#sidebar {
-    width: 22em !important;
+.sidebar {
+   height: 100vh;
 }
 
 
@@ -57,7 +57,7 @@
 
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
     #sidebar {
         max-width: none !important;
         flex: none !important;
@@ -79,4 +79,4 @@
         margin-top: 1em !important;
         font-size: 1.5em !important;
     }
-}
+} */
