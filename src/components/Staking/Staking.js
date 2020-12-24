@@ -87,7 +87,7 @@ const Staking = () => {
                 <div style={{ marginTop: '0.8em' }}>
                     <Card id="current-total-pool-card" bordered={false}>
                         <div id="current-total-card-header"><b>Our inaugral Staking pool is here</b></div>
-                        <div style={{ fontSize: '50%', color: 'white' }}>
+                        <div style={{ fontSize: '80%', color: 'white' }}>
                         Staking allows the Prophecy network to strengthen while rewarding community participants. Simply stake your Prophecy in different pools to gain $PRY rewards.
                         Prophecy staking is limited, it will not last forever; we will probably offer staking for 2021 only, and it’s on a first come, first serve basis.
                         </div>
