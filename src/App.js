@@ -6,6 +6,8 @@ import { Layout, Button } from 'antd';
 import TopicMenu from './components/TopicMenu';
 import Home from './components/Home/Home';
 import YieldPools from './components/YieldPools/YieldPools';
+import Staking from './components/Staking/Staking';
+
 import ComingSoon from './components/ComingSoon/ComingSoon';
 import logo from './logo.svg';
 import Logo from './components/Logo/ProphetLogo';
@@ -230,7 +232,7 @@ function App () {
                                     </Route>
                                     <Route path="/home" render={() => <Home account={account} />} />
                                     <Route exact path="/prophetPools" component={YieldPools} />
-                                    <Route exact path="/staking" component={ComingSoon} />
+                                    <Route exact path="/staking" component={Staking} />
                                     <Route exact path="/auction" component={ComingSoon} />
                                     <Route exact path="/activity" component={ComingSoon} />
                                 </Switch>
