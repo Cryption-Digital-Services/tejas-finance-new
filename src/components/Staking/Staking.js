@@ -5,7 +5,7 @@ import logo from './../../logo.svg';
 import './Staking.css';
 
 const Staking = () => {
-    const [cardDetails, setCardDetails] = useState({ type: 'Join Beginner Pool',
+    const [cardDetails, setCardDetails] = useState({ type: 'Join Staking Pool',
         ante: '70000',
         anteUp: '200,000',
         winNumber: '600,000',
